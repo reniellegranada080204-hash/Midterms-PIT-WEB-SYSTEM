@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about" class="section">
+  <img src="images/profile.jpg" alt="Profile picture" class="profile-img">
+
+  <h1>Renielle Andre B. Granada</h1>
+  <h3>Aspiring Web Developer</h3>
+
+  <p>
+    I am a student passionate about creating simple and functional websites.
+    I enjoy learning new technologies and improving my coding skills.
+  </p>
+
+  <a href="cv.pdf" download class="btn">Download Resume</a>
+</section>
+
+<section id="education" class="section">
+  <h2>Education</h2>
+  <ul>
+    <li>Plantation Central Elementary School</li>
+    <li>BS Information Technology - University of Science and Technology of Southern Philippines</li>
+    <li>Senior High School - Libona National High School</li>
+  </ul>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <input type="text" id="skillSearch" placeholder="Search skills...">
+
+  <ul id="skillsList">
+    <li>HTML & CSS beginner</li>
+    <li>Game Technicality</li>
+    <li>Cooking</li>
+  </ul>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <ul>
+    <li>ATM transaction system</li>
+  </ul>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="formMsg"></p>
+</section>
+
+<footer>
+  <p>📍 Cagayan de Oro, Philippines</p>
+
+  <div class="social">
+    <i data-feather="github"></i>
+    <i data-feather="facebook"></i>
+    <i data-feather="linkedin"></i>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>
